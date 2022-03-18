@@ -1,6 +1,6 @@
 # On Multi-Domain Long-Tailed Recognition, Generalization and Beyond
 
-This repository contains the implementation code for paper <br>
+This repository contains the implementation code for paper: <br>
 __[On Multi-Domain Long-Tailed Recognition, Generalization and Beyond](https://arxiv.org/abs/2203.09513)__
 ___
 <p align="center">
@@ -9,7 +9,7 @@ ___
 
 
 ## MDLT: From Single- to Multi-Domain Imbalanced Learning
-Existing studies on data imbalance focus on __single-domain__ settings, i.e., samples are from the same data distribution. However, natural data can originate from __distinct domains__, where a minority class in one domain could have abundant instances from other domains. We systematically investigate _Multi-Domain Long-Tailed Recognition (MDLT)_, which learns from multi-domain imbalanced data, addresses _label imbalance_, _domain shift_, and _divergent label distributions across domains_, and generalizes to all domain-class pairs.
+Existing studies on data imbalance focus on __single-domain__ settings, i.e., samples are from the same data distribution. However, natural data can originate from __distinct domains__, where a minority class in one domain could have abundant instances from other domains. We systematically investigate __Multi-Domain Long-Tailed Recognition (MDLT)__, which learns from multi-domain imbalanced data, addresses _label imbalance_, _domain shift_, and _divergent label distributions across domains_, and generalizes to all domain-class pairs.
 
 We develop the _domain-class transferability graph_, and show that such transferability governs the success of learning in MDLT. We then propose _BoDA_, a theoretically grounded learning strategy that tracks the upper bound of transferability statistics, and ensures balanced alignment and calibration across imbalanced domain-class distributions.
 
