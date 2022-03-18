@@ -1,25 +1,30 @@
 # On Multi-Domain Long-Tailed Recognition, Generalization and Beyond
 
-This repository contains the implementation code for paper: [On Multi-Domain Long-Tailed Recognition, Generalization and Beyond](https://arxiv.org/abs/xxx).
+This repository contains the implementation code for paper: [On Multi-Domain Long-Tailed Recognition, Generalization and Beyond](https://arxiv.org/abs/2203.09513).
 
 <p align="center">
-    <img src="mdlt.png" width="600"> <br>
-<b>Multi-Domain Long-Tailed Recognition (MDLT)</b> aims to learn from imbalanced data from distinct domains, <br> tackle potential missing data for certain regions, and generalize to the entire target range.
+    <img src="mdlt.png" width="850"> <br>
+<b>Multi-Domain Long-Tailed Recognition (MDLT)</b> aims to learn from imbalanced data from multiple distinct domains,<br>tackle <i>label imbalance</i>, <i>domain shift</i>, and <i>divergent label distributions across domains</i>, and generalize to all domain-class pairs.
 </p>
 
 
-## Beyond Single-domain Imbalance: Brief Introduction for MDLT
-Existing techniques for learning from imbalanced data focus on targets with __categorical__ indices, i.e., the targets are different classes. However, many real-world tasks involve __continuous__ and even infinite target values. We systematically investigate _Deep Imbalanced Regression (DIR)_, which aims to learn continuous targets from natural imbalanced data, deal with potential missing data for certain target values, and generalize to the entire target range.
+## MDLT: From Single- to Multi-Domain Imbalanced Learning
+Existing studies on data imbalance focus on __single-domain__ settings, i.e., samples are from the same data distribution. However, natural data can originate from __distinct domains__, where a minority class in one domain could have abundant instances from other domains. We systematically investigate _Multi-Domain Long-Tailed Recognition (MDLT)_, which learns from multi-domain imbalanced data, addresses _label imbalance_, _domain shift_, and _divergent label distributions across domains_, and generalizes to all domain-class pairs.
 
-We curate and benchmark large-scale DIR datasets for common real-world tasks in _computer vision_, _natural language processing_, and _healthcare_ domains, ranging from single-value prediction such as age, text similarity score, health condition score, to dense-value prediction such as depth.
+We develop the _domain-class transferability graph_, and show that such transferability governs the success of learning in MDLT. We then propose _BoDA_, a theoretically grounded learning strategy that tracks the upper bound of transferability statistics, and ensures balanced alignment and calibration across imbalanced domain-class distributions.
+
+We curate MDLT benchmark datasets based on widely-used multi-domain datasets, and benchmark ~20 algorithms that span different learning strategies for MDLT.
 
 
-## Domain Generalization under Data Imbalance
-In additional to MDLT, we show that 
+## Beyond MDLT: Domain Generalization under Data Imbalance
+Further, as a byproduct, we demonstrate that _BoDA_ strengthens Domain Generalization (DG) algorithms, and establishes new state-of-the-art on DG benchmarks.
+Note that all current standard DG benchmarks naturally exhibit heavy class imbalance within domains and label distributions shift across domains, confirming that data imbalance is an intrinsic problem in DG, but has yet been overlooked by past works.
+
+The results shed light on how label imbalance can affect out-of-distribution generalization, and highlight the importance of integrating label imbalance into practical DG algorithm design.
 
 
 ## Updates
-- __[03/17/2022]__ [ArXiv version](https://arxiv.org/abs/xxx) posted. The code is currently under cleaning. Please stay tuned for updates.
+- __[03/17/2022]__ [ArXiv version](https://arxiv.org/abs/2203.09513) posted. The code is currently under cleaning. Please stay tuned for updates.
 
 
 ## Citation
@@ -27,7 +32,7 @@ In additional to MDLT, we show that
 @article{yang2022multi,
   title={On Multi-Domain Long-Tailed Recognition, Generalization and Beyond},
   author={Yang, Yuzhe and Wang, Hao and Katabi, Dina},
-  journal={arXiv preprint arXiv:xxx},
+  journal={arXiv preprint arXiv:2203.09513},
   year={2022}
 }
 ```
