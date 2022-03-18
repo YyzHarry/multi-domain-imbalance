@@ -1,10 +1,10 @@
 # On Multi-Domain Long-Tailed Recognition, Generalization and Beyond
 
-This repository contains the implementation code for paper: [On Multi-Domain Long-Tailed Recognition, Generalization and Beyond](https://arxiv.org/abs/2203.09513).
-
+This repository contains the implementation code for paper <br>
+__[On Multi-Domain Long-Tailed Recognition, Generalization and Beyond](https://arxiv.org/abs/2203.09513)__
+___
 <p align="center">
-    <img src="mdlt.png" width="850"> <br>
-<b>Multi-Domain Long-Tailed Recognition (MDLT)</b> aims to learn from imbalanced data from multiple distinct domains,<br>tackle <i>label imbalance</i>, <i>domain shift</i>, and <i>divergent label distributions across domains</i>, and generalize to all domain-class pairs.
+    <img src="mdlt.png" width="800"> <br>
 </p>
 
 
