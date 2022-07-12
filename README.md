@@ -13,7 +13,8 @@
   <a href="http://mdlt.csail.mit.edu/">[Project Page]</a>&nbsp;&nbsp;&bull;&nbsp;
   <a href="https://arxiv.org/abs/2203.09513">[Paper]</a>&nbsp;&nbsp;&bull;&nbsp;
   <a >[Video]</a>&nbsp;&nbsp;&bull;&nbsp;
-  <a >[Blog Post]</a>
+  <a href="https://towardsdatascience.com/how-to-learn-imbalanced-data-arising-from-multiple-domains-7d0c0d6e3c17">[Blog Post]</a>&nbsp;&nbsp;&bull;&nbsp;
+  <a href="https://zhuanlan.zhihu.com/p/539749541">[Zhihu (in Chinese)]</a>
 </h4>
 
 <div align="center">
@@ -137,6 +138,7 @@ python -u -m mdlt.evaluate.eval_checkpoint --algorithm <...> --dataset <...> --d
 
 
 ## Updates
+- __[07/2022]__ We create a [Blog post](https://towardsdatascience.com/how-to-learn-imbalanced-data-arising-from-multiple-domains-7d0c0d6e3c17) for this work (version in Chinese is also [available here](https://zhuanlan.zhihu.com/p/539749541)). Check it out for more details!
 - __[07/2022]__ Paper accepted to ECCV 2022. We have released the code and models.
 - __[03/2022]__ [arXiv version](https://arxiv.org/abs/2203.09513) posted. The code is currently under cleaning. Please stay tuned for updates.
 
