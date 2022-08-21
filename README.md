@@ -1,24 +1,13 @@
-<h1 align="center">On Multi-Domain Long-Tailed Recognition,<br>Imbalanced Domain Generalization and Beyond</h1>
+# Multi-Domain Long-Tailed Recognition (MDLT)
+
+This repository contains the implementation for paper: [On Multi-Domain Long-Tailed Recognition, Imbalanced Domain Generalization and Beyond](https://arxiv.org/abs/2203.09513) (ECCV 2022).
+
+It is also a (living) PyTorch suite containing benchmark datasets and algorithms for Multi-Domain Long-Tailed Recognition (MDLT). Currently we support [8 MDLT datasets](./mdlt/dataset/datasets.py) (3 synthetic + 5 real), as well as [~20 algorithms](./mdlt/learning/algorithms.py) that span different learning strategies. Feel free to send us a PR to add your algorithm / dataset for MDLT!
+___
 
 <div align="center">
-    <a href='http://www.mit.edu/~yuzhe/' target='_blank'>Yuzhe Yang</a>,
-    <a href='http://www.wanghao.in/' arget='_blank'>Hao Wang</a>,
-    <a href='https://people.csail.mit.edu/dina/' target='_blank'>Dina Katabi</a>
-</div>
-<div align="center">
-    <i>17th European Conference on Computer Vision (ECCV 2022)</i>
-</div>
-
-<h4 align="center">
-  <a href="http://mdlt.csail.mit.edu/">[Project Page]</a>&nbsp;&nbsp;&bull;&nbsp;
-  <a href="https://arxiv.org/abs/2203.09513">[Paper]</a>&nbsp;&nbsp;&bull;&nbsp;
-  <a >[Video]</a>&nbsp;&nbsp;&bull;&nbsp;
-  <a href="https://towardsdatascience.com/how-to-learn-imbalanced-data-arising-from-multiple-domains-7d0c0d6e3c17">[Blog Post]</a>&nbsp;&nbsp;&bull;&nbsp;
-  <a href="https://zhuanlan.zhihu.com/p/539749541">[Zhihu (in Chinese)]</a>
-</h4>
-
-<div align="center">
-    <img src="mdlt/assets/teaser.gif" width="750">
+    <img src="mdlt/assets/teaser.gif" width="750"><br>
+<b>Multi-Domain Long-Tailed Recognition (MDLT)</b> aims to learn from multi-domain imbalanced data, address label imbalance, domain shift, and divergent label distributions across domains, and generalize to all domain-class pairs.
 </div>
 
 ## MDLT: From Single- to Multi-Domain Imbalanced Learning
